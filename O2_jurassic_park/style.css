@@ -1,0 +1,371 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Header --- */
+
+header{
+    background-image: url("https://o2web.ca/app/uploads/2023/03/banniere.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 15vh;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 22px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+/* --- Main --- */
+
+h2{
+    margin-bottom: 40px;
+}
+
+h2, h3{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3{
+    margin-bottom: 25px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+main>section{
+    width: 85%;
+}
+
+main>section>p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.supplements_techniques{
+    margin: 80px 0;
+}
+
+.supplements_techniques>div{
+    display: flex;
+}
+
+.supp_tech_container>div{
+    width: 50%;
+    padding:10px 5px;
+    font-family: 'Open Sans', sans-serif;
+    border-top: 2px solid rgb(204, 202, 202);
+}
+
+.supp_tech_container p{
+    margin: 0;
+}
+
+.supp_tech_container ul{
+    padding: 0;
+    margin: 0;
+}
+
+.supp_tech_container ul>li{
+    list-style: none;
+}
+
+.carousel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: rgb(37, 37, 37);
+}
+
+.slick-carousel{
+    width: 85%;
+}
+
+.slick-carousel img{
+    width: 100%;
+}
+
+.slick-prev::before, .slick-next::before{
+    color: rgb(106, 106, 106);
+}
+
+/* --- footer --- */
+
+footer{
+    background-image: url("https://o2web.ca/app/uploads/2023/03/banniere.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 15vh;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+footer h4{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer p{
+    margin: 5px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    width: 90%;
+    text-align: center;
+}
+
+.finished_btn{
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 4px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.finished_btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.finished_btn:focus{
+    outline: none;
+    background-color: white;
+    color: black;
+}
+
+.finished_btn:active{
+    background: none;
+    color: white;
+}
+
+/* --- Medias Queries --- */
+
+@media screen and (min-width: 400px){
+    header, footer{
+        height: 18vh;
+    }
+
+}
+
+@media screen and (min-width: 500px){
+    header, footer{
+        height: 22vh;
+    }
+
+    .slick-carousel{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 600px){
+    header, footer{
+        height: 26vh;
+    }
+
+    h1{
+        font-size: 26px;
+    }
+
+    .le_parc_jurassique,
+    .supplements_techniques{
+        width: 70%;
+    }
+
+    footer h4{
+        font-size: 20px;
+    }
+
+    footer p{
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .finished_btn{
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 700px){
+    header, footer{
+        height: 30vh;
+    }
+}
+
+@media screen and (min-width: 800px){
+    header, footer{
+        height: 35vh;
+    }
+
+    .slick-carousel{
+        width: 70%;
+    }
+
+    .slick-prev::before, .slick-next::before{
+        font-size: 30px;
+    }
+
+    .slick-prev {
+        left: -34px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    header{
+        height: 39vh;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    header{
+        height: 45vh;
+    }
+
+    .le_parc_jurassique,
+    .supplements_techniques{
+        width: 60%;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    main>section>p{
+        font-size: 20px;
+    }
+
+    h2,h3{
+        font-size: 28px;
+    }
+
+    .slick-carousel{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    header{
+        height: 48vh;
+    }
+
+    footer{
+        background-position: 50% 25%;
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    header{
+        height: 53vh;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    footer{
+        background-position: 50% 30%;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    header{
+        height: 57vh;
+    }
+
+    main{
+        padding-top: 80px;
+    }
+
+    footer{
+        background-position: 50% 32%;
+    }
+
+    footer h4{
+        font-size: 24px;
+    }
+
+    footer p{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .finished_btn{
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    header{
+        height: 61vh;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1500px){
+    header{
+        height: 65vh;
+    }
+
+    .le_parc_jurassique,
+    .supplements_techniques{
+        width: 50%;
+    }
+
+    .slick-carousel{
+        width: 50%;
+    }
+
+    .supp_tech_title, .supp_tech_info{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 1600px){
+    header{
+        height: 68vh;
+    }
+
+    h1{
+        font-size: 55px;
+    }
+
+    footer{
+        background-position: 50% 50%;
+    }
+}
